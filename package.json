@@ -1,0 +1,18 @@
+{
+  "name": "cypressautomation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules//.bin//cypress run",
+    "dashboard":"npx cypress run --record --key be495e0c-4b15-4714-9c73-16690bdb6a14  --spec cypress/integration/examples/*.js --headed --browser chrome --env url='http://rahulshettyacademy.com'",
+    "headtest":"npm run test -- --browser chrome",
+    "chrometest":"npm run test -- --browser chrome --parallel"
+
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.7.1"
+  }
+}
